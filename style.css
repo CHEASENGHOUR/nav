@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.container>.header>.nav{
+    width: 90%;
+    height: 50px;
+    border-radius: 0.5rem;
+    margin: 10px auto;
+    box-shadow: 0px 0px 7px -3px #176ab3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.container>.header>.nav>.logo{
+    width: 15%;
+    height: 100%;
+    display: grid;
+    place-items: center;  
+}
+.container>.header>.nav>.menu>ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 5 equal columns for each item */
+    list-style: none;
+    gap: 10px;
+    background-color: #f0f0f0;
+}
+.container>.header>.nav>.menu>ul>li{
+    text-align: center;
+}
+.container>.header>.nav>.menu>ul>li>a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 2px;
+    color: black;
+}
+.container>.header>.nav>.menu>ul>li>a:hover{
+    color: #176ab3;
+}
+.container>.header>.nav>.acc>form>.login{
+    background-color: #176ab3;
+    padding: 10px 25px;
+    border-radius: 5px;
+    appearance: auto;
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 16px;
+    outline: 0;  
+    border: 1px solid #176ab3;
+} 
+.container>.header>.nav>.acc>form>.login:hover{
+    box-shadow: 0px 0px 7px -1px #2310ea;
+}
+.container>.header>.nav>.acc>form>.sign-up{
+    background-color: #176ab3;
+    border:0.1px solid #176ab3;
+    color: #f0f0f0;
+    font-weight: 600;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    outline: 0;
+    appearance: auto;
+}
+.container>.header>.nav>.acc>form>.sign-up:hover{
+    background-color: initial;
+    background-position: 20px;
+    color: #176ab3;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting{
+    position: relative;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting>.webhost{
+    border-radius: 5px;
+    width: 160vh;
+    display: none;
+    /* height: 0px; */
+    padding: 0px 10px;
+    top:  50px;
+    right: -520px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px -5px 10px 2px #000;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting:hover>.webhost{
+    display: block;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting>.webhost::after{
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 600px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting>.webhost>.box{
+    width: 50%;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting>.webhost>.box>.box1{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 10px;
+}
+.container>.header>.nav>.menu>ul>li>#web-hosting>.webhost>.box>.box1:hover{
+    color: aqua;
+}
